@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>telemadrid &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/tag/telemadrid/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:18 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Programa «La Solución» para movilidad en Madrid</title>
+		<link>https://auvmp.org/202001/programa-la-solucion-movilidad-madrid/</link>
+					<comments>https://auvmp.org/202001/programa-la-solucion-movilidad-madrid/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2020 08:53:47 +0000</pubDate>
+				<category><![CDATA[Medios]]></category>
+		<category><![CDATA[telemadrid]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=370</guid>
+
+					<description><![CDATA[Fuente: TeleMadrid]]></description>
+										<content:encoded><![CDATA[<p>Fuente: TeleMadrid...</p>
+<p><a href="https://auvmp.org/202001/programa-la-solucion-movilidad-madrid/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/202001/programa-la-solucion-movilidad-madrid/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="https://auvmp.org/video/20200116La_Solucion.mp4" length="165955386" type="video/mp4" />
+
+			</item>
+	</channel>
+</rss>

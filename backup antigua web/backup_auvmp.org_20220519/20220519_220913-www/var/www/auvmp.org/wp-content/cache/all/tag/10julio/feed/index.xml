@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>10julio &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/tag/10julio/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:16 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Manifestación 10 de Julio &#8211; Día del VMP</title>
+		<link>https://auvmp.org/202107/manifestacion-10-de-julio-dia-del-vmp/</link>
+					<comments>https://auvmp.org/202107/manifestacion-10-de-julio-dia-del-vmp/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Mon, 05 Jul 2021 23:39:35 +0000</pubDate>
+				<category><![CDATA[Noticias]]></category>
+		<category><![CDATA[10julio]]></category>
+		<category><![CDATA[dgt]]></category>
+		<category><![CDATA[madrid]]></category>
+		<category><![CDATA[manifestación]]></category>
+		<category><![CDATA[regulación]]></category>
+		<category><![CDATA[vmpenlucha]]></category>
+		<guid isPermaLink="false">https://auvmp.org/?p=905</guid>
+
+					<description><![CDATA[🚫 Contra la prohibición a los VMP en vías interurbanas. 🚫 Contra la restricciones técnicas de velocidad y potencia que buscan acabar con los VMP como alternativa sostenible al coche. ⚖️ Por una regulación justa para los VMP similar a la existente a las bicicletas. ⏱ Sábado, 10 de Julio 19:00 📍 Pza. Colón (esquina&#8230;]]></description>
+										<content:encoded><![CDATA[<p>🚫 Contra la prohibici&oacute;n a los VMP en v&iacute;as interurbanas. 🚫 Contra la restricciones t&eacute;cnicas de velocidad y potencia que buscan acabar con los VMP como alternativa sostenible al coche. ⚖️ Por una regulaci&oacute;n justa para los VMP similar a la existente a las bicicletas. ⏱ S&aacute;bado, 10 de Julio 19:00 📍 Pza. Col&oacute;n (esquina Hard Rock Caf&eacute;) &iexcl;Ven con la bater&iacute;a cargada para completar los 17 km de recorrido!</p>
+<p><a href="https://auvmp.org/202107/manifestacion-10-de-julio-dia-del-vmp/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/202107/manifestacion-10-de-julio-dia-del-vmp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

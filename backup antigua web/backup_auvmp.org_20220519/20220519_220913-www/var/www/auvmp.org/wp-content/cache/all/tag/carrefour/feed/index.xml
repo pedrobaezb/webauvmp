@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>carrefour &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/tag/carrefour/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:19 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Carrefour permite acceder a sus centros con Vehículos de Movilidad Personal</title>
+		<link>https://auvmp.org/201909/carrefour-permite-acceder-a-sus-centros-con-vehiculos-de-movilidad-personal/</link>
+					<comments>https://auvmp.org/201909/carrefour-permite-acceder-a-sus-centros-con-vehiculos-de-movilidad-personal/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Thu, 05 Sep 2019 00:01:38 +0000</pubDate>
+				<category><![CDATA[Notas de prensa]]></category>
+		<category><![CDATA[carrefour]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=258</guid>
+
+					<description><![CDATA[Carrefour, dentro de su compromiso con el medio ambiente, ha acordado junto con la Asociación de Usuarios de Vehículos de Movilidad Personal (AUVMP), facilitar el acceso a sus establecimientos a los clientes que acuden utilizando Vehículos de Movilidad Personal. La medida es una respuesta directa de Carrefour a las necesidades expresadas por sus clientes. Los&#8230;]]></description>
+										<content:encoded><![CDATA[<p>Carrefour, dentro de su compromiso con el medio ambiente, ha acordado junto con la Asociaci&oacute;n de Usuarios de Veh&iacute;culos de Movilidad Personal (AUVMP), facilitar el acceso a sus establecimientos a los clientes que acuden utilizando Veh&iacute;culos de Movilidad Personal. La medida es una respuesta directa de Carrefour a las necesidades expresadas por sus clientes. Los usuarios de estos veh&iacute;culos...</p>
+<p><a href="https://auvmp.org/201909/carrefour-permite-acceder-a-sus-centros-con-vehiculos-de-movilidad-personal/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/201909/carrefour-permite-acceder-a-sus-centros-con-vehiculos-de-movilidad-personal/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

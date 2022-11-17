@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>entrevista &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/tag/entrevista/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:19 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Entrevista en La Mañana TVE por atropello a peatón</title>
+		<link>https://auvmp.org/201908/entrevista-la-manana-tve-por-atropello-a-peaton/</link>
+					<comments>https://auvmp.org/201908/entrevista-la-manana-tve-por-atropello-a-peaton/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Fri, 02 Aug 2019 22:43:42 +0000</pubDate>
+				<category><![CDATA[Medios]]></category>
+		<category><![CDATA[entrevista]]></category>
+		<category><![CDATA[rtve]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=226</guid>
+
+					<description><![CDATA[Fuente: RTVE]]></description>
+										<content:encoded><![CDATA[<p>Fuente: RTVE...</p>
+<p><a href="https://auvmp.org/201908/entrevista-la-manana-tve-por-atropello-a-peaton/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/201908/entrevista-la-manana-tve-por-atropello-a-peaton/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		<enclosure url="https://auvmp.org/video/AUVMP-LaManana-20190802.mp4" length="46378155" type="video/mp4" />
+
+			</item>
+		<item>
+		<title>Entrevista &#8211; Madrid en la Onda (31/01/2019)</title>
+		<link>https://auvmp.org/201902/entrevista-madrid-en-la-onda-31-01-2019/</link>
+					<comments>https://auvmp.org/201902/entrevista-madrid-en-la-onda-31-01-2019/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Fri, 01 Feb 2019 20:53:50 +0000</pubDate>
+				<category><![CDATA[Medios]]></category>
+		<category><![CDATA[entrevista]]></category>
+		<category><![CDATA[onda cero]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=136</guid>
+
+					<description><![CDATA[&#160;]]></description>
+										<content:encoded><![CDATA[<p>Your browser does not support the audio element.</p>
+<p><a href="https://auvmp.org/201902/entrevista-madrid-en-la-onda-31-01-2019/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/201902/entrevista-madrid-en-la-onda-31-01-2019/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

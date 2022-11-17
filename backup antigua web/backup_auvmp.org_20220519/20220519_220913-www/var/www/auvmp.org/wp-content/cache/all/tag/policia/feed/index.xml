@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>policía &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/tag/policia/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:17 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Comunicado de AUVMP sobre las recientes actuaciones de las policías locales</title>
+		<link>https://auvmp.org/202105/comunicado-de-auvmp-sobre-las-recientes-actuaciones-de-las-policias-locales/</link>
+					<comments>https://auvmp.org/202105/comunicado-de-auvmp-sobre-las-recientes-actuaciones-de-las-policias-locales/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Sun, 23 May 2021 21:22:04 +0000</pubDate>
+				<category><![CDATA[Notas de prensa]]></category>
+		<category><![CDATA[comunicado]]></category>
+		<category><![CDATA[policía]]></category>
+		<category><![CDATA[regulación]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=757</guid>
+
+					<description><![CDATA[[PDF del comunicado] Tras la multitud de quejas recibidas por los usuarios de Vehículos de Movilidad Personal acerca de las actuaciones de algunos agentes de las policías locales que están realizando una injusta persecución a estos vehículos en desconocimiento de la actual normativa reguladora vigente, emitimos el presente comunicado aclaratorio. De acuerdo con la definición&#8230;]]></description>
+										<content:encoded><![CDATA[<p>[ PDF del comunicado] Tras la multitud de quejas recibidas por los usuarios de Veh&iacute;culos de Movilidad Personal acerca de las actuaciones de algunos agentes de las polic&iacute;as locales que est&aacute;n realizando una injusta persecuci&oacute;n a estos veh&iacute;culos en desconocimiento de la actual normativa reguladora vigente, emitimos el presente comunicado aclaratorio. De acuerdo con la definici&oacute;n incorporada al...</p>
+<p><a href="https://auvmp.org/202105/comunicado-de-auvmp-sobre-las-recientes-actuaciones-de-las-policias-locales/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/202105/comunicado-de-auvmp-sobre-las-recientes-actuaciones-de-las-policias-locales/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

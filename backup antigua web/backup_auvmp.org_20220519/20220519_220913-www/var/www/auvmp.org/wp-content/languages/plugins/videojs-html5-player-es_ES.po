@@ -1,0 +1,49 @@
+# Translation of Plugins - Videojs HTML5 Player - Development (trunk) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Videojs HTML5 Player - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-10-21 09:36:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Videojs HTML5 Player - Development (trunk)\n"
+
+#. Author URI of the plugin
+msgid "https://wphowto.net/"
+msgstr "https://wphowto.net/"
+
+#. Author of the plugin
+msgid "naa986"
+msgstr "naa986"
+
+#. Description of the plugin
+msgid "Easily embed videos using videojs html5 player"
+msgstr "Incrusta vídeos fácilmente usando Videojs HTML5 Player"
+
+#. Plugin URI of the plugin
+msgid "https://wphowto.net/videojs-html5-player-for-wordpress-757"
+msgstr "https://wphowto.net/videojs-html5-player-for-wordpress-757"
+
+#: videojs-html5-player.php:121
+msgid "you need to specify the src of the video file"
+msgstr "tienes que especificar el origen del archivo del vídeo"
+
+#: videojs-html5-player.php:69
+msgid "For detailed documentation please visit the plugin homepage <a target=\"_blank\" href=\"%s\">here</a>."
+msgstr "Para documentación detallada, por favor, visita la página de inicio del plugin <a target=\"_blank\" href=\"%s\">aquí</a>."
+
+#. Plugin Name of the plugin
+#: videojs-html5-player.php:63
+msgid "Videojs HTML5 Player"
+msgstr "Videojs HTML5 Player"
+
+#: videojs-html5-player.php:63
+msgid "Videojs Settings"
+msgstr "Ajustes de Videojs"
+
+#: videojs-html5-player.php:51
+msgid "Settings"
+msgstr "Ajustes"

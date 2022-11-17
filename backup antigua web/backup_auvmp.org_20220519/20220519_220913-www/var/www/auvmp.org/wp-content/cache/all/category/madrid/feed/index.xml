@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Madrid &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/category/madrid/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Thu, 07 Apr 2022 11:16:18 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Alegaciones de AUVMP a la modificación de la Ordenanza de Movilidad Sostenible</title>
+		<link>https://auvmp.org/202106/alegaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/</link>
+					<comments>https://auvmp.org/202106/alegaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Sun, 27 Jun 2021 23:24:50 +0000</pubDate>
+				<category><![CDATA[Madrid]]></category>
+		<category><![CDATA[alegaciones]]></category>
+		<category><![CDATA[madrid]]></category>
+		<category><![CDATA[ordenanza]]></category>
+		<guid isPermaLink="false">https://auvmp.org/?p=901</guid>
+
+					<description><![CDATA[Desde AUVMP presentamos las siguientes alegaciones al proyecto de modificación de la Ordenanza de Movilidad Sostenible de Madrid en la consulta pública abierta por el Ayuntamiento de Madrid.]]></description>
+										<content:encoded><![CDATA[<p>Desde AUVMP presentamos las siguientes alegaciones al proyecto de modificaci&oacute;n de la Ordenanza de Movilidad Sostenible de Madrid en la consulta p&uacute;blica abierta por el Ayuntamiento de Madrid.</p>
+<p><a href="https://auvmp.org/202106/alegaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/202106/alegaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aportaciones de AUVMP a la modificación de la Ordenanza de Movilidad Sostenible</title>
+		<link>https://auvmp.org/202001/aportaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/</link>
+					<comments>https://auvmp.org/202001/aportaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Wed, 22 Jan 2020 02:22:26 +0000</pubDate>
+				<category><![CDATA[Madrid]]></category>
+		<category><![CDATA[alegaciones]]></category>
+		<category><![CDATA[madrid]]></category>
+		<category><![CDATA[ordenanza]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=365</guid>
+
+					<description><![CDATA[Desde AUVMP presentamos las siguientes aportaciones a la modificación de la Ordenanza de Movilidad Sostenible de Madrid en la consulta pública abierta por el Ayuntamiento de Madrid.]]></description>
+										<content:encoded><![CDATA[<p>Desde AUVMP presentamos las siguientes aportaciones a la modificaci&oacute;n de la Ordenanza de Movilidad Sostenible de Madrid en la consulta p&uacute;blica abierta por el Ayuntamiento de Madrid.</p>
+<p><a href="https://auvmp.org/202001/aportaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/202001/aportaciones-de-auvmp-a-la-modificacion-de-la-ordenanza-de-movilidad-sostenible/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,36 @@
+/* 
+ Theme Name:   AUVMP
+ Theme URI:    http://auvmp.org
+ Description:  Tema para AUVMP
+ Author:       rafamerino
+ Author URI:   https://rafamerino.com
+ Template:     so-corp
+ Version:      1.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+
+/* Transitions on social media icons 
+.apshadfa { width: 48px; height: 48px; background: url(http://auvmp.org/img/fa.png) no-repeat; border-radius: 15px; display:inline-block; margin-right: 5px; } 
+.apshadfa:hover { -moz-box-shadow: 0 0 10px #afafaf; -webkit-box-shadow: 0 0 10px #afafaf; box-shadow: 0 0 10px #afafaf; }
+
+.apshadtt { width: 48px; height: 48px; background: url(http://auvmp.org/img/tt.png) no-repeat; border-radius: 15px; display:inline-block; margin-right: 5px; } 
+.apshadtt:hover { -moz-box-shadow: 0 0 10px #afafaf; -webkit-box-shadow: 0 0 10px #afafaf; box-shadow: 0 0 10px #afafaf; }
+
+.apshadin { width: 48px; height: 48px; background: url(http://auvmp.org/img/in.png) no-repeat; border-radius: 15px; display:inline-block; margin-right: 5px; } 
+.apshadin:hover { -moz-box-shadow: 0 0 10px #afafaf; -webkit-box-shadow: 0 0 10px #afafaf; box-shadow: 0 0 10px #afafaf; }
+
+.apshadyt { width: 48px; height: 48px; background: url(http://auvmp.org/img/yt.png) no-repeat; border-radius: 15px; display:inline-block; } 
+.apshadyt:hover { -moz-box-shadow: 0 0 10px #afafaf; -webkit-box-shadow: 0 0 10px #afafaf; box-shadow: 0 0 10px #afafaf; }
+*/
+
+.imgBox	{ width: 48px; height: 48px; background: url(../../../../img/tt.png) no-repeat !important; }
+	
+.imgshadw { transition: img-shadow .3s; }
+/* .imgshadw:hover { img-shadow: 0 0 11px rgba(33,33,33,.2); } 
+/* 
+.imgBox:hover {
+		-moz-box-shadow: 0 0 10px #ccc !important;
+		-webkit-box-shadow: 0 0 10px #ccc !important;
+		box-shadow: 0 0 10px #ccc !important;
+	} */

@@ -1,0 +1,152 @@
+0000.000 (0) Opened log file at time: Thu, 03 Oct 2019 22:12:48 +0000 on http://auvmp.org
+0000.034 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.17 WP: 4.9.11 PHP: 7.3.8-1+0~20190807.43+debian9~1.gbp7731bf (fpm-fcgi, Linux infoab 4.9.0-9-amd64 #1 SMP Debian 4.9.168-1+deb9u5 (2019-08-11) x86_64) MySQL: 10.4.7-MariaDB-1:10.4.7+maria~stretch-log WPLANG: es_ES Server: nginx/1.10.3 safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 42.8M | 6M) multisite: N openssl: OpenSSL 1.1.1c  28 May 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.067 (0) Free space on disk containing Updraft's temporary directory: 1745252.5 MB
+0000.102 (0) Tasks: Backup files: 0 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.226 (0) Requesting semaphore lock (d) (apparently not via scheduler)
+0000.427 (0) Set semaphore last lock (d) time to 2019-10-03 22:12:48
+0000.553 (0) Semaphore lock (d) complete
+0000.661 (0) Backup run: resumption=0, nonce=108d43347a3e, file_nonce=108d43347a3e begun at=1570140768 (1s ago), job type=backup
+0000.728 (0) Scheduling a resumption (1) after 300 seconds (1570141069) in case this run gets aborted
+0000.811 (0) This backup run is not intended for files - skipping
+0000.845 (0) Beginning creation of database dump (WordPress DB)
+0000.912 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.986 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `avmp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nC (truncated - 1195 bytes total)
+0001.021 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0001.147 (0) Table avmp_options: Total expected rows (approximate): 370
+0001.220 (0) Table avmp_options: Total rows added: 365 in 0.02 seconds
+0001.273 (0) Table avmp_options: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_options.table.gz - 19.1 KB)
+0001.440 (0) Table avmp_users: Total expected rows (approximate): 5
+0001.484 (0) Table avmp_users: Total rows added: 5 in 0.00 seconds
+0001.535 (0) Table avmp_users: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_users.table.gz - 0.8 KB)
+0001.708 (0) Table avmp_usermeta: Total expected rows (approximate): 100
+0001.753 (0) Table avmp_usermeta: Total rows added: 100 in 0.00 seconds
+0001.791 (0) Table avmp_usermeta: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_usermeta.table.gz - 2.9 KB)
+0001.917 (0) Table avmp_commentmeta: Total expected rows (approximate): 0
+0001.960 (0) Table avmp_commentmeta: Total rows added: 0 in 0.00 seconds
+0002.000 (0) Table avmp_commentmeta: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_commentmeta.table.gz - 0.4 KB)
+0002.128 (0) Table avmp_comments: Total expected rows (approximate): 7
+0002.162 (0) Table avmp_comments: Total rows added: 7 in 0.00 seconds
+0002.194 (0) Table avmp_comments: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_comments.table.gz - 3.1 KB)
+0002.369 (0) Table avmp_links: Total expected rows (approximate): 0
+0002.404 (0) Table avmp_links: Total rows added: 0 in 0.00 seconds
+0002.437 (0) Table avmp_links: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_links.table.gz - 0.4 KB)
+0002.538 (0) Table avmp_postmeta: Total expected rows (approximate): 366
+0002.582 (0) Table avmp_postmeta: Total rows added: 366 in 0.01 seconds
+0002.649 (0) Table avmp_postmeta: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_postmeta.table.gz - 10 KB)
+0002.781 (0) Table avmp_posts: Total expected rows (approximate): 230
+0002.848 (0) Table avmp_posts: Total rows added: 230 in 0.03 seconds
+0002.888 (0) Table avmp_posts: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_posts.table.gz - 26.9 KB)
+0003.007 (0) Table avmp_term_relationships: Total expected rows (approximate): 34
+0003.050 (0) Table avmp_term_relationships: Total rows added: 34 in 0.00 seconds
+0003.090 (0) Table avmp_term_relationships: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_term_relationships.table.gz - 0.5 KB)
+0003.216 (0) Table avmp_term_taxonomy: Total expected rows (approximate): 12
+0003.271 (0) Table avmp_term_taxonomy: Total rows added: 12 in 0.00 seconds
+0003.319 (0) Table avmp_term_taxonomy: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_term_taxonomy.table.gz - 0.5 KB)
+0003.518 (0) Table avmp_termmeta: Total expected rows (approximate): 0
+0003.560 (0) Table avmp_termmeta: Total rows added: 0 in 0.00 seconds
+0003.600 (0) Table avmp_termmeta: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_termmeta.table.gz - 0.4 KB)
+0003.801 (0) Table avmp_terms: Total expected rows (approximate): 12
+0003.845 (0) Table avmp_terms: Total rows added: 12 in 0.00 seconds
+0003.884 (0) Table avmp_terms: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_terms.table.gz - 0.6 KB)
+0003.986 (0) Table avmp_GDFormAddressFieldOptions: Total expected rows (approximate): 0
+0004.020 (0) Table avmp_GDFormAddressFieldOptions: Total rows added: 0 in 0.00 seconds
+0004.052 (0) Table avmp_GDFormAddressFieldOptions: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormAddressFieldOptions.table.gz - 0.4 KB)
+0004.153 (0) Table avmp_GDFormCaptchas: Total expected rows (approximate): 0
+0004.188 (0) Table avmp_GDFormCaptchas: Total rows added: 0 in 0.00 seconds
+0004.219 (0) Table avmp_GDFormCaptchas: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormCaptchas.table.gz - 0.3 KB)
+0004.322 (0) Table avmp_GDFormFieldOptions: Total expected rows (approximate): 0
+0004.365 (0) Table avmp_GDFormFieldOptions: Total rows added: 0 in 0.00 seconds
+0004.440 (0) Table avmp_GDFormFieldOptions: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFieldOptions.table.gz - 0.4 KB)
+0004.573 (0) Table avmp_GDFormFieldTypes: Total expected rows (approximate): 19
+0004.616 (0) Table avmp_GDFormFieldTypes: Total rows added: 19 in 0.00 seconds
+0004.656 (0) Table avmp_GDFormFieldTypes: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFieldTypes.table.gz - 0.5 KB)
+0004.841 (0) Table avmp_GDFormFields: Total expected rows (approximate): 4
+0004.885 (0) Table avmp_GDFormFields: Total rows added: 4 in 0.00 seconds
+0004.924 (0) Table avmp_GDFormFields: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFields.table.gz - 1 KB)
+0005.050 (0) Table avmp_GDFormForms: Total expected rows (approximate): 1
+0005.094 (0) Table avmp_GDFormForms: Total rows added: 1 in 0.00 seconds
+0005.133 (0) Table avmp_GDFormForms: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormForms.table.gz - 0.9 KB)
+0005.259 (0) Table avmp_GDFormLabelPositions: Total expected rows (approximate): 5
+0005.302 (0) Table avmp_GDFormLabelPositions: Total rows added: 5 in 0.00 seconds
+0005.342 (0) Table avmp_GDFormLabelPositions: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormLabelPositions.table.gz - 0.4 KB)
+0005.544 (0) Table avmp_GDFormOnsubmitActions: Total expected rows (approximate): 3
+0005.578 (0) Table avmp_GDFormOnsubmitActions: Total rows added: 3 in 0.00 seconds
+0005.610 (0) Table avmp_GDFormOnsubmitActions: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormOnsubmitActions.table.gz - 0.4 KB)
+0005.711 (0) Table avmp_GDFormSettings: Total expected rows (approximate): 6
+0005.746 (0) Table avmp_GDFormSettings: Total rows added: 6 in 0.00 seconds
+0005.852 (0) Table avmp_GDFormSettings: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSettings.table.gz - 0.5 KB)
+0005.979 (0) Table avmp_GDFormSubmissionFields: Total expected rows (approximate): 0
+0006.014 (0) Table avmp_GDFormSubmissionFields: Total rows added: 0 in 0.00 seconds
+0006.054 (0) Table avmp_GDFormSubmissionFields: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSubmissionFields.table.gz - 0.4 KB)
+0006.156 (0) Table avmp_GDFormSubmissions: Total expected rows (approximate): 0
+0006.199 (0) Table avmp_GDFormSubmissions: Total rows added: 0 in 0.00 seconds
+0006.231 (0) Table avmp_GDFormSubmissions: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSubmissions.table.gz - 0.4 KB)
+0006.349 (0) Table avmp_GDFormThemes: Total expected rows (approximate): 1
+0006.392 (0) Table avmp_GDFormThemes: Total rows added: 1 in 0.00 seconds
+0006.432 (0) Table avmp_GDFormThemes: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormThemes.table.gz - 0.3 KB)
+0006.625 (0) Table avmp_duplicator_packages: Total expected rows (approximate): 3
+0006.669 (0) Table avmp_duplicator_packages: Total rows added: 3 in 0.00 seconds
+0006.708 (0) Table avmp_duplicator_packages: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_duplicator_packages.table.gz - 2.8 KB)
+0006.844 (0) Table avmp_rio_process_queue: Total expected rows (approximate): 7
+0006.926 (0) Table avmp_rio_process_queue: Total rows added: 7 in 0.00 seconds
+0006.992 (0) Table avmp_rio_process_queue: finishing file (backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_rio_process_queue.table.gz - 1 KB)
+0007.160 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_options.table.gz (1/26): adding to final database dump
+0007.204 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_users.table.gz (2/26): adding to final database dump
+0007.235 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_usermeta.table.gz (3/26): adding to final database dump
+0007.269 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_commentmeta.table.gz (4/26): adding to final database dump
+0007.301 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_comments.table.gz (5/26): adding to final database dump
+0007.338 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_links.table.gz (6/26): adding to final database dump
+0007.368 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_postmeta.table.gz (7/26): adding to final database dump
+0007.409 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_posts.table.gz (8/26): adding to final database dump
+0007.459 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_term_relationships.table.gz (9/26): adding to final database dump
+0007.494 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_term_taxonomy.table.gz (10/26): adding to final database dump
+0007.543 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_termmeta.table.gz (11/26): adding to final database dump
+0007.613 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_terms.table.gz (12/26): adding to final database dump
+0007.670 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormAddressFieldOptions.table.gz (13/26): adding to final database dump
+0007.703 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormCaptchas.table.gz (14/26): adding to final database dump
+0007.736 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFieldOptions.table.gz (15/26): adding to final database dump
+0007.770 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFieldTypes.table.gz (16/26): adding to final database dump
+0007.803 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormFields.table.gz (17/26): adding to final database dump
+0007.837 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormForms.table.gz (18/26): adding to final database dump
+0007.871 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormLabelPositions.table.gz (19/26): adding to final database dump
+0007.918 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormOnsubmitActions.table.gz (20/26): adding to final database dump
+0007.985 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSettings.table.gz (21/26): adding to final database dump
+0008.038 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSubmissionFields.table.gz (22/26): adding to final database dump
+0008.071 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormSubmissions.table.gz (23/26): adding to final database dump
+0008.104 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_GDFormThemes.table.gz (24/26): adding to final database dump
+0008.138 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_duplicator_packages.table.gz (25/26): adding to final database dump
+0008.174 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db-table-avmp_rio_process_queue.table.gz (26/26): adding to final database dump
+0008.217 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db.gz: finished writing out complete database file (48 KB)
+0008.495 (0) Total database tables backed up: 26 (backup_2019-10-04-0012_AUVMP_108d43347a3e-db.gz, size: 69813, sha1: 37186b55a895f7f0348e5294cecffa4a96e40667, sha256: 934ce6c33b24e682bc8f8aafe33cbf393cb786d1764858e045160ee7583a9ac0)
+0008.698 (0) backup_2019-10-04-0012_AUVMP_108d43347a3e-db.gz: db: This file has not yet been successfully uploaded: will queue
+0008.757 (0) Saving backup history. Total backup size: 68.2 KB
+0008.841 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0008.976 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0009.057 (0) No remote despatch: user chose no remote backup service
+0009.125 (0) Recording as successfully uploaded: backup_2019-10-04-0012_AUVMP_108d43347a3e-db.gz
+0009.250 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0009.293 (0) Number of backup sets in history: 3; groups (db): 1
+0009.334 (0) Examining (for databases) backup set with group_id=0, nonce=108d43347a3e, datestamp=1570140768 (Oct 03 2019 22:12:48)
+0009.375 (0) This backup set is the backup set just made, so will not be deleted.
+0009.375 (0) Examining (for databases) backup set with group_id=0, nonce=707702e18c65, datestamp=1570139342 (Oct 03 2019 21:49:02)
+0009.376 (0) This backup set (1570139342) was an 'Always Keep' backup, and we have not yet reached any retain limits, so it should be counted in the count of how many have been retained for purposes of the 'how many to retain' count. It will not be pruned. Skipping.
+0009.376 (0) Examining (for databases) backup set with group_id=0, nonce=872af96e6a2a, datestamp=1569613860 (Sep 27 2019 19:51:00)
+0009.376 (0) 1569613860: db: this set includes a database (backup_2019-09-27-2151_AUVMP_872af96e6a2a-db.gz); db count is now 2
+0009.376 (0) 1569613860: db: over retain limit (2); will delete this database
+0009.376 (0) Delete file: backup_2019-09-27-2151_AUVMP_872af96e6a2a-db.gz, service=none
+0009.417 (0) Deleting local copy (backup_2019-09-27-2151_AUVMP_872af96e6a2a-db.gz)
+0009.501 (0) This backup set is now empty; will remove from history
+0009.534 (0) Deleting log file (log.872af96e6a2a.txt)
+0009.576 (0) Number of backup sets in history: 2; groups (files): 1
+0009.610 (0) Examining (for files) backup set with nonce=108d43347a3e, datestamp=1570140768 (Oct 03 2019 22:12:48)
+0009.610 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0009.643 (0) Examining (for files) backup set with nonce=707702e18c65, datestamp=1570139342 (Oct 03 2019 21:49:02)
+0009.643 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0009.644 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0009.819 (0) Resume backup (108d43347a3e, 0): finish run
+0009.919 (0) Decremented the semaphore (d) by 1
+0009.986 (0) Semaphore (d) unlocked
+0010.061 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0010.245 (0) The backup apparently succeeded and is now complete
+0010.278 (0) No email will/can be sent - the user has not configured an email address.
+0010.312 (0) El respaldo parece haber tenido éxito y ahora está completado

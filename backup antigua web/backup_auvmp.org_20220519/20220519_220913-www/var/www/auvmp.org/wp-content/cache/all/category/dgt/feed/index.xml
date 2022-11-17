@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>DGT &#8211; AUVMP</title>
+	<atom:link href="https://auvmp.org/category/dgt/feed/" rel="self" type="application/rss+xml" />
+	<link>https://auvmp.org</link>
+	<description>Asociación de Usuarios de Vehículos de Movilidad Personal</description>
+	<lastBuildDate>Sat, 12 Jun 2021 10:43:14 +0000</lastBuildDate>
+	<language>es</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	
+	<item>
+		<title>Presentadas alegaciones conjuntas para próximo RD de la DGT sobre Medidas Urbanas</title>
+		<link>https://auvmp.org/201902/presentadas-alegaciones-conjuntas-para-proximo-rd-de-la-dgt-sobre-medidas-urbanas/</link>
+					<comments>https://auvmp.org/201902/presentadas-alegaciones-conjuntas-para-proximo-rd-de-la-dgt-sobre-medidas-urbanas/#respond</comments>
+		
+		<dc:creator><![CDATA[Asociación AUVMP]]></dc:creator>
+		<pubDate>Thu, 07 Feb 2019 14:18:13 +0000</pubDate>
+				<category><![CDATA[DGT]]></category>
+		<category><![CDATA[alegaciones]]></category>
+		<guid isPermaLink="false">http://auvmp.org/?p=144</guid>
+
+					<description><![CDATA[La AUVMP ha presentado hoy, junto con el resto de asociaciones locales de España, las alegaciones al borrador del próximo Real Decreto de Medidas Urbanas de Tráfico que quiere presentar la DGT el 1 de junio. Aquí os dejamos el borrador que propuso la DGT, para quien quiera consultarlo. A continuación, el documento de alegaciones, suscrito&#8230;]]></description>
+										<content:encoded><![CDATA[<p>La AUVMP ha presentado hoy, junto con el resto de asociaciones locales de Espa&ntilde;a, las alegaciones al borrador del pr&oacute;ximo Real Decreto de Medidas Urbanas de Tr&aacute;fico que quiere presentar la DGT el 1 de junio. Aqu&iacute; os dejamos el borrador que propuso la DGT, para quien quiera consultarlo. A continuaci&oacute;n, el documento de alegaciones, suscrito por todas las asociaciones mencionadas: Alegaciones...</p>
+<p><a href="https://auvmp.org/201902/presentadas-alegaciones-conjuntas-para-proximo-rd-de-la-dgt-sobre-medidas-urbanas/" rel="nofollow">Origen</a></p>]]></content:encoded>
+					
+					<wfw:commentRss>https://auvmp.org/201902/presentadas-alegaciones-conjuntas-para-proximo-rd-de-la-dgt-sobre-medidas-urbanas/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
