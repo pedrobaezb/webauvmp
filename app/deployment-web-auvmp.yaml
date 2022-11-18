@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web-auvmp
+  name: deployment-web-auvmp
+  annotations:
+    version: 22.11.2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-auvmp
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: web-auvmp
+    spec:
+      containers:
+      - image: localhost:32000/web-auvmp-frontend:22.11.3
+        name: web-auvmp-frontend-image
+        ports:
+        - containerPort: 80
