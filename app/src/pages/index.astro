@@ -1,17 +1,19 @@
 ---
+import Root from '../Root'
 // Welcome to Astro! Everything between these triple-dash code fences
 // is your "component front matter". It never runs in the browser.
 console.log('This runs in your terminal, not the browser!');
 ---
-<!-- Below is your "component template." It's just HTML, but with
-     some magic sprinkled in to help you build great templates. -->
-<html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/auvmp_icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUVMP</title>
+  </head>
   <body>
-    <h1>Hello, World!</h1>
+    <div id="root" class="mx-16"></div>
+    <Root />
   </body>
 </html>
-<style>
-  h1 {
-    color: orange;
-  }
-</style>
