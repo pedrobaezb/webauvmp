@@ -40,8 +40,8 @@ const App = () => {
     <main className="w-full max-w-6xl mx-auto">
       <article>
         <div className="w-4/5 m-auto mb-24 border-b border-gray-300">
-          <div className="opacity-50 text-center ">En que creemos Lorem, ipsum.</div>
-          <div className="my-4 text-3xl leading-10">Creemos que los VMP son el futuro Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, modi!<br/></div>
+          <div className="opacity-50 text-center ">¿Quienes somos?</div>
+          <div className="my-4 text-3xl leading-10"><br/></div>
         </div>
       </article>
       <section>
@@ -49,9 +49,11 @@ const App = () => {
           <div className="grid grid-cols-2 gap-4 mb-24">
             <div id="w-node-_86e64837-0616-515b-4568-76c147234d34-e6de2bd7">
               <div className="home-section-wrap">
-                <div className="label cc-light">About</div>
-                <h2 className="section-heading">Who we are</h2>
-                <p className="paragraph-light font-montserrat">Nulla vel sodales tellus, quis condimentum enim. Nunc porttitor venenatis feugiat. Etiam quis faucibus erat, non accumsan leo. Aliquam erat volutpat. Vestibulum ac faucibus eros. Cras ullamcorper gravida tellus ut consequat.</p>
+                <div className="label cc-light">Acerca de</div>
+                <h2 className="section-heading">¿Quienes somos?</h2>
+                <p className="paragraph-light font-montserrat">La <span className="font-bold">Asociación de Usuarios de Vehículos de Movilidad Personal (AUVMP)</span> es una organización sin ánimo de lucro que agrupa a la mayoría de usuarios de vehículos de movilidad personal, y a otros colectivos de usuarios de vehículos eléctricos.</p>
+                <p className="paragraph-light font-montserrat">Desde su creación, la asociación trabaja para mejorar las condiciones de transporte de los ciudadanos, a través del fomento de la movilidad eléctrica.</p>
+                <p className="paragraph-light font-montserrat">La AUVMP desarrolla proyectos e iniciativas de todo tipo, alternando siempre la propuesta y la negociación con las autoridades locales. Más allá de sus órganos directivos (la Junta Directiva), la Asociación se organiza en torno a diferentes áreas de trabajo, en las que participan las asociaciones federadas y otras entidades asociadas. Además la AUVMP organiza regularmente rutas para disfrutar y sacar todo el rendimiento posible a nuestro vehículo de movilidad personal.</p>
               </div>
               <a href="/about" className="button w-inline-block">
                 <div>Learn More</div>
