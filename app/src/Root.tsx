@@ -9,6 +9,10 @@ import p4 from './recursos/MONOCICLOWEB.png'
 import fotoEjemplo1 from './recursos/foto-ejemplo1.jpg'
 import fotoEjemplo2 from './recursos/foto-ejemplo2.jpg'
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons'
+
 const App = () => {
   return (<>
     <header className='mb-24'>
@@ -75,10 +79,39 @@ const App = () => {
                 <div>Learn More</div>
               </a>
             </div>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div className="w-full bg-slate-300 min-h-min grid grid-flow-row auto-rows-min justify-center place-items-center">
+          <p className="text-5xl m-4">Siguenos en nuestras redes sociales:</p>
+          <div>
+            <ul className="flex justify-center place-items-center m-6">
+              <li>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://twitter.com/auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Twitter" icon={faTwitter} className="w-16 m-4 inline" /></a>
+              </li>
+              <li>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.instagram.com/auvmp_/" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Instagram" icon={faInstagram} className="w-16 m-4 inline" /></a>
+              </li>
+              <li>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.tiktok.com/@auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Tiktok" icon={faTiktok} className="w-16 m-4 inline" /></a>
+              </li>
+              <li>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://t.me/auvmp" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Telegrem" icon={faTelegram} className="w-16 m-4 inline" /></a>
+              </li>
+            </ul>
           </div>
-        </article>
-      </section>
-    </main>
+        </div>
+        <div className="bg-gray-800 text-gray-200 flex justify-center">
+          <ul className="flex justify-center place-items-center m-3">
+            <li>Copyright AUVMP</li>
+            <li>Politica de privacidad</li>
+            <li>Email de Contacto</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
   </>)
 }
 
