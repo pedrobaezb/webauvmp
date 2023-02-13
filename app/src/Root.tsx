@@ -103,10 +103,10 @@ const App = () => {
           </div>
         </div>
         <div className="bg-gray-800 text-gray-200 flex justify-center">
-          <ul className="flex justify-center place-items-center m-3">
-            <li>Copyright AUVMP</li>
-            <li>Politica de privacidad</li>
+          <ul className="flex justify-center place-items-center m-3 space-x-8">
+            <li>Copyright © 2023 AUVMP</li>
             <li>Email de Contacto</li>
+            <li>Politica de privacidad</li>
           </ul>
         </div>
       </footer>
