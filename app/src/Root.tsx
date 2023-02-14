@@ -42,7 +42,16 @@ const App = () => {
           </video>
         </div>
       </header>
-      <main className="w-full max-w-6xl mx-auto">
+      <div className="w-full flex flex-row">
+      <aside className="basis-1/5">
+        <div className="w-4/5 h-full mx-auto mt-4">
+          <a className="twitter-timeline" data-width="100%" data-height="640px" data-dnt="true" data-theme="light" href="https://twitter.com/auvmp_?ref_src=twsrc%5Etfw">
+            Tweets by auvmp_
+          </a>
+          <script async src="https://platform.twitter.com/widgets.js"></script>
+        </div>
+      </aside>
+      <main className="basis-3/5w-full max-w-6xl mx-auto">
         <article>
           <div className="w-4/5 m-auto mb-24 border-b border-gray-300">
             <div className="opacity-50 text-center ">Acerca de Nosotros</div>
@@ -65,6 +74,8 @@ const App = () => {
           </article>
         </section>
       </main>
+      <div className="basis-1/5"></div>
+      </div>
       <footer>
         <div className="w-full bg-slate-300 min-h-min grid grid-flow-row auto-rows-min justify-center place-items-center">
           <p className="text-5xl m-4">Siguenos en nuestras redes sociales:</p>
