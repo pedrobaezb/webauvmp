@@ -46,7 +46,7 @@ const App = () => {
       <aside className="basis-1/5">
         <div className="w-4/5 h-full mx-auto mt-4">
           <a className="twitter-timeline" data-width="100%" data-height="640px" data-dnt="true" data-theme="light" href="https://twitter.com/auvmp_?ref_src=twsrc%5Etfw">
-            Tweets by auvmp_
+            Tweets de la Auvmp
           </a>
           <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
