@@ -2,7 +2,7 @@
   "packageManager": "pnpm@7.26.3",
   "name": "web-auvmp",
   "private": true,
-  "version": "23.02.14",
+  "version": "23.02.24",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
