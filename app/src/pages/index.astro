@@ -5,7 +5,7 @@ import p2 from '../recursos/PATIN.png'
 import p3 from '../recursos/ONEWHEEL.png'
 import p4 from '../recursos/MONOCICLOWEB.png'
 import HazteSocio from '../components/HazteSocio'
-import auvmpVideo from '../recursos/AUVMP-PwP-hoCpIfU.mp4'
+import auvmpIntroMp4 from '../recursos/AUVMP_intro.mp4'
 import fotoEjemplo1 from '../recursos/foto-ejemplo1.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -40,9 +40,9 @@ import { faTwitter, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-
             <button class="text-white bg-green-600 rounded-lg p-2 text-2xl m-3">Entrada socios</button>
           </div>
         </div>
-        <div id="presentacionPrincipal" class='relative flex items-center justify-center overflow-hidden h-[50vh] mt-8'>
-          <video autoplay loop muted class='absolute z-10 w-11/12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-            <source src={auvmpVideo} />
+        <div id="presentacionPrincipal" class='relative flex items-center overflow-hidden justify-center h-[66vh] mt-8'>
+          <video autoplay loop muted class='absolute bottom-0'>
+            <source src={auvmpIntroMp4} type="video/mp4" />
           </video>
         </div>
       </header>
