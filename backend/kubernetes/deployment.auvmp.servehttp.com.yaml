@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: auvmp.servehttp.com
+  name: deployment-auvmp-servehttp-com
+  namespace: auvmp
+  annotations:
+    version: 23.03.02
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auvmp.servehttp.com
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: auvmp.servehttp.com
+    spec:
+      containers:
+      - image: localhost:32000/auvmp-servehttp-com-controladorfrontal:23.03.02
+        name: auvmp-servehttp-com-controladorfrontal-image
+        ports:
+        - containerPort: 80

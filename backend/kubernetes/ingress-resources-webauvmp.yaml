@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-resources-auvmp-servehttp-com
+  namespace: auvmp
+  annotations:
+    version: 23.03.02
+spec:
+  rules:
+  - host: auvmp.servehttp.com
+    http:
+     paths:
+     - path: /
+       pathType: Prefix
+       backend:
+         service:
+           name: service-auvmp-servehttp-com
+           port:
+             number: 80
+  tls:
+  - hosts:
+    - auvmp.servehttp.com
+    secretName: auvmp-servehttp-com-cert
