@@ -1,4 +1,23 @@
 import { useState, useEffect } from "react"
+import type { FormEvent } from "react"
+
+type InscripcionType = {
+  correo: string,
+  correoRepetido: string,
+  clave: string,
+  claveRepetida: string,
+  nombre: string,
+  dniPasaporte: string,
+  apellidos: string,
+  poblacion: string,
+  codigoPostal: string,
+  telefono: string,
+  nickTelegram: string,
+  aceptaIncluirseTelegram: boolean,
+  condicionesAEPD: boolean,
+  descripcionVMP: string,
+  pagoPor: string
+}
 
 export default function HazteSocio() {
     const [mostrarModal, setMostrarModal] = useState(false)
@@ -15,8 +34,8 @@ export default function HazteSocio() {
     }
 
     useEffect(() => {
-        const handleEsc = (event:any) => {
-            if (event.keyCode === 27 || event.key === "Escape")setMostrarModal(false)
+        const handleEsc = (event:KeyboardEvent) => {
+            if (event.key === "Escape")setMostrarModal(false)
         }
         window.addEventListener('keydown', handleEsc)
         return () => {
@@ -30,7 +49,7 @@ export default function HazteSocio() {
       TRANSFERENCIA: "Transferencia",
       BIZUM: "Bizum"} as const
 
-    const [inscripcion, setInscripcion] = useState<any>({
+    const [inscripcion, setInscripcion] = useState<InscripcionType>({
       correo: "",
       correoRepetido: "",
       clave: "",
@@ -49,7 +68,7 @@ export default function HazteSocio() {
     })
 
 
-    async function enviar(e:any) {
+    function enviar(e:FormEvent) {
       e.preventDefault()
       setEstaEnviando(true)
 
@@ -68,21 +87,23 @@ export default function HazteSocio() {
       }
 
 
-      try {
-        console.debug("Mandamos la peticion")
-        const response = await fetch("https://dummyjson.com/http/201")
-        console.debug("Ha ido correcto", response)
-        if(response.status!=201) {
-          console.debug("El servidor ha mandado otro codigo que no deberia",response)
-          throw new Error("Respuesta incorrecta del servidor")
+      console.debug("Mandamos la peticion")
+      fetch("https://dummyjson.com/http/201").then(
+        (response)=>{
+          console.debug("Ha ido correcto", response)
+          if(response.status!=201) {
+            console.debug("El servidor ha mandado otro codigo que no deberia",response)
+            throw new Error("Respuesta incorrecta del servidor")
+          }
         }
-        console.debug("Al final todo ha ido bien")
-      } catch (error) {
-        erroresValidacion.push("No se ha podido grabar la inscripcion, por favor intentelo de nuevo mas tarde")
-        setErrores(erroresValidacion)
-        setEstaEnviando(false)
-        return
-      }
+      ).catch(
+        ()=> {
+          erroresValidacion.push("No se ha podido grabar la inscripcion, por favor intentelo de nuevo mas tarde")
+          setErrores(erroresValidacion)
+          setEstaEnviando(false)
+          return
+        }
+      )
 
 
 /*      await new Promise((resolve:any) => {
@@ -97,7 +118,7 @@ export default function HazteSocio() {
 
     }
 
-    function borrarTodo(_:any) {
+    function borrarTodo() {
       setInscripcion({
         correo: "",
         correoRepetido: "",
@@ -174,54 +195,54 @@ export default function HazteSocio() {
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="correo" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Correo *</label>
-                                  <input type="email" name="correo" id="correo" value={inscripcion.correo} placeholder="Tu dirección de correo electrónico" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, correo:  e.target.value}))} />
+                                  <input type="email" name="correo" id="correo" value={inscripcion.correo} autoComplete="email" placeholder="Tu dirección de correo electrónico" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, correo:  e.target.value}))} />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="correoRepetido" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Repite correo *</label>
-                                  <input type="email" name="correoRepetido" id="correoRepetido" value={inscripcion.correoRepetido}  placeholder="Tu dirección de correo repetida" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, correoRepetido:  e.target.value}))} />
+                                  <input type="email" name="correoRepetido" id="correoRepetido" value={inscripcion.correoRepetido} autoComplete="email" placeholder="Tu dirección de correo repetida" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, correoRepetido:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="clave" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Clave *</label>
-                                  <input type="password" name="clave" id="clave" value={inscripcion.clave} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, clave:  e.target.value}))} />
+                                  <input type="password" name="clave" id="clave" value={inscripcion.clave} required autoComplete="new-password" className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, clave:  e.target.value}))} />
                                   <p className="text-gray-600 text-xs italic">Cuanto mas larga mas segura</p>
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="claveRepetida" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Repite clave *</label>
-                                  <input type="password" name="claveRepetida" id="claveRepetida" value={inscripcion.claveRepetida} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, claveRepetida:  e.target.value}))} />
+                                  <input type="password" name="claveRepetida" id="claveRepetida" value={inscripcion.claveRepetida} required autoComplete="new-password" className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, claveRepetida:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="nombre" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Nombre *</label>
-                                  <input type="text" name="nombre" id="nombre" value={inscripcion.nombre} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, nombre:  e.target.value}))} />
+                                  <input type="text" name="nombre" id="nombre" value={inscripcion.nombre} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, nombre:  e.target.value}))} />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="dniPasaporte" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">DNI o Pasaporte *</label>
-                                  <input type="text" name="dniPasaporte" id="dniPasaporte" value={inscripcion.dniPasaporte} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, dniPasaporte:  e.target.value}))} />
+                                  <input type="text" name="dniPasaporte" id="dniPasaporte" value={inscripcion.dniPasaporte} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, dniPasaporte:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">
                                   <label htmlFor="apellidos" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Apellidos *</label>
-                                  <input type="text" name="apellidos" id="apellidos" value={inscripcion.apellidos} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, apellidos:  e.target.value}))} />
+                                  <input type="text" name="apellidos" id="apellidos" value={inscripcion.apellidos} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, apellidos:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="poblacion" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Población *</label>
-                                  <input type="text" name="poblacion" id="poblacion" value={inscripcion.poblacion} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, poblacion:  e.target.value}))} />
+                                  <input type="text" name="poblacion" id="poblacion" value={inscripcion.poblacion} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, poblacion:  e.target.value}))} />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="codigoPostal" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Código Postal *</label>
-                                  <input type="text" name="codigoPostal" id="codigoPostal" value={inscripcion.codigoPostal} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, codigoPostal:  e.target.value}))} />
+                                  <input type="text" name="codigoPostal" id="codigoPostal" value={inscripcion.codigoPostal} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, codigoPostal:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="telefono" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Teléfono *</label>
-                                  <input type="text" name="telefono" id="telefono" value={inscripcion.telefono} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, telefono:  e.target.value}))} />
+                                  <input type="text" name="telefono" id="telefono" value={inscripcion.telefono} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, telefono:  e.target.value}))} />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                 </div>
@@ -229,12 +250,12 @@ export default function HazteSocio() {
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="nickTelegram" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Nick en Telegram *</label>
-                                  <input type="text" name="nickTelegram" id="nickTelegram" value={inscripcion.nickTelegram} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p:any)=>({...p, nickTelegram:  e.target.value}))} />
+                                  <input type="text" name="nickTelegram" id="nickTelegram" value={inscripcion.nickTelegram} required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" onChange={(e)=>setInscripcion((p)=>({...p, nickTelegram:  e.target.value}))} />
                                 </div>
                                 <div className="w-full md:w-1/2 px-3">
                                   <label htmlFor="aceptaIncluirseTelegram" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">¿Aceptas entrar en el grupo Telegram de socios AUVMP?</label>
                                   <div className="md:flex md:items-center h-full content-center pb-8">
-                                    <input type="checkbox" name="aceptaIncluirseTelegram" id="aceptaIncluirseTelegram" className="block bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mr-2" checked={inscripcion.aceptaIncluirseTelegram} onChange={(e)=>setInscripcion((p:any)=>({...p, aceptaIncluirseTelegram:  e.target.checked}))} />
+                                    <input type="checkbox" name="aceptaIncluirseTelegram" id="aceptaIncluirseTelegram" className="block bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mr-2" checked={inscripcion.aceptaIncluirseTelegram} onChange={(e)=>setInscripcion((p)=>({...p, aceptaIncluirseTelegram:  e.target.checked}))} />
                                     <span className="text-sm">Acepto</span>
                                   </div>
                                 </div>
@@ -243,7 +264,7 @@ export default function HazteSocio() {
                                 <div className="w-full px-3">
                                   <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Responsable de los datos: Asociación de Usuarios de Vehículos de Movilidad Personal G88109293. Datos facilitados para la inscripción en libro registro de la Asociación así como para recibir comunicaciones sobre eventos futuros o información de interés de dicha Asociación. Podrás ejercer tus derechos de acceso, rectificación o eliminación de los datos facilitados en este cuestionario enviando un email a admin@auvmp.org *</p>
                                   <div className="md:flex md:items-center mb-1">
-                                    <input type="checkbox" name="condicionesAEPD" id="condicionesAEPD" className="block bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mr-2" required checked={inscripcion.condicionesAEPD} onChange={(e)=>setInscripcion((p:any)=>({...p, condicionesAEPD:  e.target.checked}))} />
+                                    <input type="checkbox" name="condicionesAEPD" id="condicionesAEPD" className="block bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 mr-2" required checked={inscripcion.condicionesAEPD} onChange={(e)=>setInscripcion((p)=>({...p, condicionesAEPD:  e.target.checked}))} />
                                     <label htmlFor="condicionesAEPD" className="text-sm">Doy mi consentimiento</label>
                                   </div>
                                   <p className="text-gray-600 text-xs italic">Esta es obligatoria por requisito legal</p>
@@ -252,7 +273,7 @@ export default function HazteSocio() {
                               <div className="flex flex-wrap -mx-3 mb-6">
                                 <div className="w-full px-3">
                                   <label htmlFor="descripcionVMP" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Dinos cual es tu VMP *</label>
-                                  <input type="text" name="descripcionVMP" id="descripcionVMP" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" value={inscripcion.descripcionVMP} onChange={(e)=>setInscripcion((p:any)=>({...p, descripcionVMP:  e.target.value}))} />
+                                  <input type="text" name="descripcionVMP" id="descripcionVMP" required className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" value={inscripcion.descripcionVMP} onChange={(e)=>setInscripcion((p)=>({...p, descripcionVMP:  e.target.value}))} />
                                 </div>
                               </div>
                               <div className="flex flex-wrap -mx-3 mb-6">
@@ -260,15 +281,15 @@ export default function HazteSocio() {
                                   <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Voy a realizar el pago de la cuota de 10€ a través de *</p>
                                   <div className="flex flex-wrap justify-around">
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.paypal" className="mr-2" required checked={inscripcion.pagoPor===formaPago.PAYPAL} onChange={(e)=>setInscripcion((p:any)=>({...p, pagoPor: e.target.checked?formaPago.PAYPAL:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.paypal" className="mr-2" required checked={inscripcion.pagoPor===formaPago.PAYPAL} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.PAYPAL:""}))} />
                                       <label htmlFor="pagoPor.paypal">Paypal</label>
                                     </div>
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.transferencia" className="mr-2" required checked={inscripcion.pagoPor===formaPago.TRANSFERENCIA} onChange={(e)=>setInscripcion((p:any)=>({...p, pagoPor: e.target.checked?formaPago.TRANSFERENCIA:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.transferencia" className="mr-2" required checked={inscripcion.pagoPor===formaPago.TRANSFERENCIA} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.TRANSFERENCIA:""}))} />
                                       <label htmlFor="pagoPor.transferencia">Transferencia</label>
                                     </div>
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.bizum" className="mr-2" required checked={inscripcion.pagoPor===formaPago.BIZUM} onChange={(e)=>setInscripcion((p:any)=>({...p, pagoPor: e.target.checked?formaPago.BIZUM:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.bizum" className="mr-2" required checked={inscripcion.pagoPor===formaPago.BIZUM} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.BIZUM:""}))} />
                                       <label htmlFor="pagoPor.bizum">Bizum</label>
                                     </div>
                                   </div>
@@ -279,7 +300,7 @@ export default function HazteSocio() {
                               </div>
                               <div className="flex justify-center">
                                 <button disabled={estaEnviando} type="reset" className="text-white bg-gray-600 rounded-lg p-2 text-xl m-3" onClick={borrarTodo}>Borrar todo</button>
-                                <button disabled={estaEnviando} type="reset" className="text-white bg-gray-600 rounded-lg p-2 text-xl m-3" onClick={()=>{borrarTodo(undefined);hideModal()}}>Cancelar</button>
+                                <button disabled={estaEnviando} type="reset" className="text-white bg-gray-600 rounded-lg p-2 text-xl m-3" onClick={()=>{borrarTodo();hideModal()}}>Cancelar</button>
                                 <button disabled={estaEnviando} type="submit" className="text-white bg-green-600 rounded-lg p-2 text-xl m-3">
                                   {estaEnviando && <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
