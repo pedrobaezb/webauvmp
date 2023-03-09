@@ -23,7 +23,7 @@ function Index() {
       <header className='mb-24'>
         <div id="navegacionSuperior" className="flex flex-row justify-between bg-gray-600 h-20 text-white">
           <div id="logo">
-            <Image className="m-4 h-12 w-56" src={auvmpLogo} alt="AUVMP 2" />
+            <Image className="m-4 h-12 w-56" src={auvmpLogo} alt="AUVMP" priority={true} />
           </div>
           <nav className='grid place-items-center' id="navegacionPrincipal">
             <ul className="flex justify-center justify-items-center">
@@ -69,7 +69,7 @@ function Index() {
                   <p className="paragraph-light font-montserrat">La AUVMP desarrolla proyectos e iniciativas de todo tipo, alternando siempre la propuesta y la negociación con las autoridades locales. Más allá de sus órganos directivos (la Junta Directiva), la Asociación se organiza en torno a diferentes áreas de trabajo, en las que participan las asociaciones federadas y otras entidades asociadas. Además la AUVMP organiza regularmente rutas para disfrutar y sacar todo el rendimiento posible a nuestro vehículo de movilidad personal.</p>
                 </div>
               </div>
-              <Image src={fotoEjemplo1} alt="" />
+              <Image src={fotoEjemplo1} alt="" priority={false} />
             </div>
           </article>
         </section>
@@ -82,16 +82,16 @@ function Index() {
           <div>
             <ul className="flex justify-center place-items-center m-6">
               <li>
-                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://twitter.com/auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Twitter" icon={faTwitter} className="w-16 m-4 inline" /></a>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://twitter.com/auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Twitter" titleId="iconoTwitter" icon={faTwitter} className="w-16 m-4 inline" /></a>
               </li>
               <li>
-                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.instagram.com/auvmp_/" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Instagram" icon={faInstagram} className="w-16 m-4 inline" /></a>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.instagram.com/auvmp_/" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Instagram" titleId="IconoInstagram" icon={faInstagram} className="w-16 m-4 inline" /></a>
               </li>
               <li>
-                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.tiktok.com/@auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Tiktok" icon={faTiktok} className="w-16 m-4 inline" /></a>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://www.tiktok.com/@auvmp_" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Tiktok" titleId="IconoTiktok" icon={faTiktok} className="w-16 m-4 inline" /></a>
               </li>
               <li>
-                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://t.me/auvmp" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Telegrem" icon={faTelegram} className="w-16 m-4 inline" /></a>
+                <a role="button" className="bg-gray-800 hover:bg-gray-600 text-gray-200 text-sm border rounded-full block" href="https://t.me/auvmp" target="_blank"><FontAwesomeIcon aria-hidden="true" title="Telegram" titleId="IconoTelegram" icon={faTelegram} className="w-16 m-4 inline" /></a>
               </li>
             </ul>
           </div>
