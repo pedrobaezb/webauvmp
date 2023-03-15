@@ -83,7 +83,7 @@ function PoliticaDePrivacidad () {
         BY-NC-SA 4.0 que permite su reutilización para uso no comercial, atribuyendo la
         autoría y manteniendo las mismas condiciones (<a className="text-orange-400" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">enlace al detalle de la licencia</a>).</p>
 
-        <Image src="/nueva-version/by-nc-sa.eu.png" alt="Creative Commons BY NC SA EU" />
+        <Image src="/by-nc-sa.eu.png" alt="Creative Commons BY NC SA EU" />
 
         <h3 className="font-semibold m-2 ml-0">Responsabilidad de los contenidos</h3>
         <p>La AUVMP no se hace responsable de la legalidad de otros sitios web de terceros

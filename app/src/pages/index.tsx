@@ -40,7 +40,7 @@ function Index() {
         </div>
         <div id="presentacionPrincipal" className='relative flex items-center overflow-hidden justify-center h-[66vh] mt-8'>
           <video autoPlay loop muted className='absolute bottom-0'>
-            <source src="/nueva-version/AUVMP_intro.mp4" type="video/mp4" />
+            <source src="/AUVMP_intro.mp4" type="video/mp4" />
           </video>
         </div>
       </header>

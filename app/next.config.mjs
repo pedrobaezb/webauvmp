@@ -21,6 +21,5 @@ const config = {
     defaultLocale: "es",
   },*/
   images: { unoptimized: true},
-  basePath: "/nueva-version",
 };
 export default config;

@@ -15,7 +15,7 @@ const MyApp: AppType<{ session: Session | null }> = ({
     <>
     <Head>
       <meta charSet="UTF-8" />
-      <link rel="icon" type="image/png" href="/nueva-version/auvmp_icono.png" />
+      <link rel="icon" type="image/png" href="/auvmp_icono.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>AUVMP</title>
     </Head>
