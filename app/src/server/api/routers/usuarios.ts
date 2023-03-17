@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import bcrypt from 'bcryptjs'
 
 import { createTRPCRouter, publicProcedure } from "~/server/api/trpc";
 
@@ -32,7 +33,7 @@ export const usuariosRouter = createTRPCRouter({
     ).mutation(async ({input, ctx})=>{
       console.log("Nos inscribimos con el input", input)
 
-      const claveHasheada="Clave alterada"
+      const claveHasheada = await bcrypt.hash(input.clave, 12)
 
       try {
         const resultadoInscripcion = await ctx.prisma.inscripcionSocio.create({
