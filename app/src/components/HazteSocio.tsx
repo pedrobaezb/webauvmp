@@ -1,5 +1,14 @@
 import { useState, useEffect } from "react"
 import type { FormEvent } from "react"
+import { useRouter } from 'next/router'
+import { api } from '../utils/api'
+
+enum formaPago {
+  NINGUNA = "",
+  PAYPAL = "Paypal",
+  TRANSFERENCIA = "Transferencia",
+  BIZUM = "Bizum"
+}
 
 type InscripcionType = {
   correo: string,
@@ -16,7 +25,7 @@ type InscripcionType = {
   aceptaIncluirseTelegram: boolean,
   condicionesAEPD: boolean,
   descripcionVMP: string,
-  pagoPor: string
+  pagoPor: formaPago
 }
 
 export default function HazteSocio() {
@@ -27,6 +36,8 @@ export default function HazteSocio() {
     const [estaEnviando, setEstaEnviando] = useState(false)
 
     const [errores, setErrores] = useState<string[]| undefined>()
+
+    const inscriptionSocio = api.usuarios.inscripcionSocio.useMutation()
 
     function hideModal () {
       setMostrarModal(false)
@@ -42,12 +53,6 @@ export default function HazteSocio() {
             window.removeEventListener('keydown', handleEsc)
         }
     }, [])
-
-    const formaPago = {
-      NINGUNA: "",
-      PAYPAL: "Paypal",
-      TRANSFERENCIA: "Transferencia",
-      BIZUM: "Bizum"} as const
 
     const [inscripcion, setInscripcion] = useState<InscripcionType>({
       correo: "",
@@ -88,16 +93,17 @@ export default function HazteSocio() {
 
 
       console.debug("Mandamos la peticion")
-      fetch("https://dummyjson.com/http/201").then(
+      inscriptionSocio.mutateAsync(inscripcion).then(
         (response)=>{
           console.debug("Ha ido correcto", response)
-          if(response.status!=201) {
+          /*if(response.status!=201) {
             console.debug("El servidor ha mandado otro codigo que no deberia",response)
             throw new Error("Respuesta incorrecta del servidor")
-          }
+          }*/
         }
       ).catch(
-        ()=> {
+        (error)=> {
+          console.error("Error recibido", error)
           erroresValidacion.push("No se ha podido grabar la inscripcion, por favor intentelo de nuevo mas tarde")
           setErrores(erroresValidacion)
           setEstaEnviando(false)
@@ -281,15 +287,15 @@ export default function HazteSocio() {
                                   <p className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">Voy a realizar el pago de la cuota de 10€ a través de *</p>
                                   <div className="flex flex-wrap justify-around">
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.paypal" className="mr-2" required checked={inscripcion.pagoPor===formaPago.PAYPAL} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.PAYPAL:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.paypal" className="mr-2" required checked={inscripcion.pagoPor===formaPago.PAYPAL} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.PAYPAL:formaPago.NINGUNA}))} />
                                       <label htmlFor="pagoPor.paypal">Paypal</label>
                                     </div>
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.transferencia" className="mr-2" required checked={inscripcion.pagoPor===formaPago.TRANSFERENCIA} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.TRANSFERENCIA:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.transferencia" className="mr-2" required checked={inscripcion.pagoPor===formaPago.TRANSFERENCIA} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.TRANSFERENCIA:formaPago.NINGUNA}))} />
                                       <label htmlFor="pagoPor.transferencia">Transferencia</label>
                                     </div>
                                     <div>
-                                      <input type="radio" name="pagoPor" id="pagoPor.bizum" className="mr-2" required checked={inscripcion.pagoPor===formaPago.BIZUM} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.BIZUM:""}))} />
+                                      <input type="radio" name="pagoPor" id="pagoPor.bizum" className="mr-2" required checked={inscripcion.pagoPor===formaPago.BIZUM} onChange={(e)=>setInscripcion((p)=>({...p, pagoPor: e.target.checked?formaPago.BIZUM:formaPago.NINGUNA}))} />
                                       <label htmlFor="pagoPor.bizum">Bizum</label>
                                     </div>
                                   </div>
