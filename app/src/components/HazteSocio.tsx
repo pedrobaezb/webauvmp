@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 import type { FormEvent } from "react"
-import { useRouter } from 'next/router'
 import { api } from '../utils/api'
 
 enum formaPago {
