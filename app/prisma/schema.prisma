@@ -34,6 +34,8 @@ model InscripcionSocio {
     condicionesAEPD Boolean
     descripcionVMP String
     pagoPor String
+    tokenCorreo String
+    fechaEnvioCorreo DateTime?
 }
 
 
