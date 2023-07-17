@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import type { FormEvent } from "react"
-import { api } from '../utils/api'
+//import { api } from '../utils/api'
 
 enum formaPago {
   NINGUNA = "",
@@ -36,7 +36,7 @@ export default function HazteSocio() {
 
     const [errores, setErrores] = useState<string[]| undefined>()
 
-    const inscriptionSocio = api.usuarios.inscripcionSocio.useMutation()
+    //const inscriptionSocio = api.usuarios.inscripcionSocio.useMutation()
 
     function hideModal () {
       setMostrarModal(false)
@@ -92,23 +92,23 @@ export default function HazteSocio() {
 
 
       console.debug("Mandamos la peticion")
-      inscriptionSocio.mutateAsync(inscripcion).then(
-        (response)=>{
-          console.debug("Ha ido correcto", response)
-          /*if(response.status!=201) {
-            console.debug("El servidor ha mandado otro codigo que no deberia",response)
-            throw new Error("Respuesta incorrecta del servidor")
-          }*/
-        }
-      ).catch(
-        (error)=> {
-          console.error("Error recibido", error)
-          erroresValidacion.push("No se ha podido grabar la inscripcion, por favor intentelo de nuevo mas tarde")
-          setErrores(erroresValidacion)
-          setEstaEnviando(false)
-          return
-        }
-      )
+      // inscriptionSocio.mutateAsync(inscripcion).then(
+      //   (response)=>{
+      //     console.debug("Ha ido correcto", response)
+      //     /*if(response.status!=201) {
+      //       console.debug("El servidor ha mandado otro codigo que no deberia",response)
+      //       throw new Error("Respuesta incorrecta del servidor")
+      //     }*/
+      //   }
+      // ).catch(
+      //   (error)=> {
+      //     console.error("Error recibido", error)
+      //     erroresValidacion.push("No se ha podido grabar la inscripcion, por favor intentelo de nuevo mas tarde")
+      //     setErrores(erroresValidacion)
+      //     setEstaEnviando(false)
+      //     return
+      //   }
+      // )
 
 
 /*      await new Promise((resolve:any) => {

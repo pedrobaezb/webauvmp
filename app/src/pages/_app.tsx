@@ -1,29 +1,17 @@
-import { type AppType } from "next/app";
-import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
+import '@/styles/globals.css'
+import type { AppProps } from 'next/app'
 
-import { api } from "~/utils/api";
+import Head from  'next/head'
 
-import "~/styles/globals.css";
-import Head from "next/head";
-
-const MyApp: AppType<{ session: Session | null }> = ({
-  Component,
-  pageProps: { session, ...pageProps },
-}) => {
-  return (
-    <>
+export default function App({ Component, pageProps }: AppProps) {
+  return (<>
     <Head>
+      <title>AUVMP</title>
       <meta charSet="UTF-8" />
       <link rel="icon" type="image/png" href="/auvmp_icono.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>AUVMP</title>
     </Head>
-      <SessionProvider session={session}>
-        <Component {...pageProps} />
-      </SessionProvider>
-    </>
-  );
-};
+    <Component {...pageProps} />
+  </>)
+}
 
-export default api.withTRPC(MyApp);

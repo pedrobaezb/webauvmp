@@ -16,9 +16,6 @@ export default Index
 
 function Index() {
   return(<>
-    <Head>
-      <title>AUVMP</title>
-    </Head>
     <div className="grid grid-flow-row grid-rows-[auto,1fr,auto] min-h-screen">
       <header className='mb-24'>
         <div id="navegacionSuperior" className="flex flex-row justify-between bg-gray-600 h-20 text-white">
