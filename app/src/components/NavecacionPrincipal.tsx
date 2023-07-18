@@ -1,7 +1,12 @@
 import Image from "next/image";
 import auvmpLogo from '../recursos/AUVMP_logo.png'
 import HazteSocio from '../components/HazteSocio'
-
+/*
+import iconoPatinete from '../recursos/PATINETEWEB.png'
+import iconoPatin from '../recursos/PATIN.png'
+import iconoOneWheel from '../recursos/ONEWHEEL.png'
+import monociclo from '../recursos/MONOCICLOWEB.png'
+*/
 
 export default function NavegacionPrincipal() {
     return (
@@ -13,6 +18,15 @@ export default function NavegacionPrincipal() {
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    {/*<nav className='grid place-items-center' id="navegacionPrincipal">
+            <ul className="flex justify-center justify-items-center">
+              <li className="grow grid place-items-center mx-4"><Image className="w-8 h-8 mx-auto" src={iconoPatinete} alt="Patinete" />Asociación</li>
+              <li className="grow grid place-items-center mx-4"><Image className="w-8 h-8" src={iconoPatin} alt="Patin" />Normativa</li>
+              <li className="grow grid place-items-center mx-4"><Image className="w-8 h-8" src={iconoOneWheel} alt="OneWheel" />Eventos y Rutas</li>
+              <li className="grow grid place-items-center mx-4"><Image className="w-8 h-8" src={monociclo} alt="Monociclo" />Colaboradores</li>
+            </ul>
+    </nav>*/}
+
                         <li><a>Item 1</a></li>
                         <li>
                         <a>Parent</a>
