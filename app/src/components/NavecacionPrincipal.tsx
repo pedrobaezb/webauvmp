@@ -41,7 +41,7 @@ export default function NavegacionPrincipal() {
                     <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end flex flex-wrap items-center justify-end gap-2">
                     <HazteSocio />
                     <button className="btn btn-secondary text-xl">Entrada socios</button>
                 </div>

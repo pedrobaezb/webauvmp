@@ -187,7 +187,7 @@ export default function HazteSocio() {
     }
 
     return(<>
-                <button className="text-white bg-green-600 rounded-lg p-2 text-2xl m-3" onClick={() => setMostrarModal(true)}>Hazte socio</button>
+                <button className="btn btn-secondary text-xl" onClick={() => setMostrarModal(true)}>Hazte socio</button>
 
                 {mostrarModal && <>
                     <div id="HazteSocioModal" className="fixed z-40 left-0 top-0 w-full h-full overflow-auto backdrop-blur-xl" onClick={hideModal}>
@@ -303,10 +303,10 @@ export default function HazteSocio() {
                                   <p className="text-gray-600 text-xs italic mt-2">(Después de enviar el cuestionario te facilitamos los datos para realizar el pago)</p>
                                 </div>
                               </div>
-                              <div className="flex justify-center">
-                                <button disabled={estaEnviando} type="reset" className="text-white bg-gray-600 rounded-lg p-2 text-xl m-3" onClick={borrarTodo}>Borrar todo</button>
-                                <button disabled={estaEnviando} type="reset" className="text-white bg-gray-600 rounded-lg p-2 text-xl m-3" onClick={()=>{borrarTodo();hideModal()}}>Cancelar</button>
-                                <button disabled={estaEnviando} type="submit" className="text-white bg-green-600 rounded-lg p-2 text-xl m-3">
+                              <div className="flex flex-wrap items-center justify-end gap-2">
+                                <button disabled={estaEnviando} type="reset" className="btn btn-secondary text-xl" onClick={borrarTodo}>Borrar todo</button>
+                                <button disabled={estaEnviando} type="reset" className="btn btn-secondary text-xl" onClick={()=>{borrarTodo();hideModal()}}>Cancelar</button>
+                                <button disabled={estaEnviando} type="submit" className="btn btn-secondary text-xl">
                                   {estaEnviando && <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
