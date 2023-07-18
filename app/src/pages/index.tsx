@@ -9,6 +9,7 @@ import monociclo from '../recursos/MONOCICLOWEB.png'
 import HazteSocio from '../components/HazteSocio'
 import fotoEjemplo1 from '../recursos/foto-ejemplo1.jpg'
 
+import NavegacionPrincipal from "@/components/NavecacionPrincipal"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,6 +17,11 @@ export default Index
 
 function Index() {
   return(<>
+    <header>
+      <NavegacionPrincipal />
+    </header>
+  </>)
+/*  return(<>
     <div className="grid grid-flow-row grid-rows-[auto,1fr,auto] min-h-screen">
       <header className='mb-24'>
         <div id="navegacionSuperior" className="flex flex-row justify-between bg-gray-600 h-20 text-white">
@@ -102,5 +108,5 @@ function Index() {
         </div>
       </footer>
     </div>
-  </>)
+  </>)*/
 }
