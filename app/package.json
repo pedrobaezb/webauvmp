@@ -1,12 +1,12 @@
 {
   "packageManager": "pnpm@8.6.7",
   "name": "web-auvmp",
-  "version": "23.03.09",
+  "version": "23.19.07",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 80",
     "lint": "next lint"
   },
   "dependencies": {

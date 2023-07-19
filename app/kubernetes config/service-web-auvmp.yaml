@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: auvmp
   labels:
     app: web-auvmp
   name: service-web-auvmp
   annotations:
-    version: 22.11.0
+    version: 23.07.19
 spec:
   type: ClusterIP
   selector:
