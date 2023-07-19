@@ -6,6 +6,7 @@ import NavegacionPrincipal from "@/components/NavecacionPrincipal"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
+import auvmpIntroImagen from '../../public/AUVMP_intro_imagen.jpg'
 export default Index
 
 function Index() {
@@ -13,7 +14,7 @@ function Index() {
       <header>
         <NavegacionPrincipal />
         <div className="container mx-auto px-8">
-          <div className="hero" style={{backgroundImage: 'url(/AUVMP_intro_imagen.jpg)'}}>
+          <div className="hero w-3/4 mx-auto" style={{backgroundImage: 'url('+auvmpIntroImagen.src+')'}}>
             <div className="hero-overlay bg-opacity-60">
               <video autoPlay loop muted>
                 <source src="/AUVMP_intro.mp4" type="video/mp4" />
@@ -21,7 +22,7 @@ function Index() {
             </div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-                <h1 className="mb-5 text-5xl font-bold">Bienvenido a la <span className="text-gray-900 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)]">AU</span><span className="text-green-600">VMP</span></h1>
+                <h1 className="mb-5 text-5xl">Bienvenido a la <span className="text-gray-900 font-black italic drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.8)]">AU</span><span className="text-green-600 font-black italic">VMP</span></h1>
               </div>
             </div>
           </div>
