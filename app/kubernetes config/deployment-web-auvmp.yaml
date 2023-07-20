@@ -25,5 +25,6 @@ spec:
       containers:
       - image: localhost:32000/web-auvmp-frontend:23.07.19
         name: web-auvmp-frontend-image
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
