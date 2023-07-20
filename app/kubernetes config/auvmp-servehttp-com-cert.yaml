@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Secret
+type: kubernetes.io/tls
+metadata:
+  name: auvmp-servehttp-com-cert
+  namespace: auvmp
+  annotations:
+    version: 23.03.02
+data:
+  tls.crt: (Omitido por obvias razones)
+  tls.key: (Omitido por obvias razones)
