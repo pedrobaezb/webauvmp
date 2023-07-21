@@ -2,7 +2,7 @@ FROM node:18.16.1-alpine3.18
 COPY . /app
 WORKDIR /app
 RUN corepack enable
-RUN corepack prepare pnpm@8.6.7 --activate
-RUN pnpm install --force --frozen-lockfile
+RUN corepack prepare yarn@3.6.1 --activate
+RUN yarn
 EXPOSE 3000
-ENTRYPOINT ["pnpm","dev"]
+ENTRYPOINT ["yarn", "run", "dev"]
