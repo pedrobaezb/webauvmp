@@ -3,14 +3,9 @@ kind: Ingress
 metadata:
   namespace: auvmp
   annotations:
-    version: 23.07.19
+    version: 23.12.21
   name: ingress-web-auvmp
 spec:
-  defaultBackend:
-    service:
-      name: service-general-zapto-org
-      port:
-        number: 80
   ingressClassName: public
   rules:
   - host: auvmp.servehttp.com

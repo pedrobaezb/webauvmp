@@ -6,25 +6,20 @@ metadata:
     app: web-auvmp
   name: deployment-web-auvmp
   annotations:
-    version: 23.07.19
+    version: 23.12.21
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: web-auvmp
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 50%
-      maxUnavailable: 50%
   template:
     metadata:
       labels:
         app: web-auvmp
     spec:
       containers:
-      - image: localhost:32000/web-auvmp-frontend:23.07.19
-        name: web-auvmp-frontend-image
+      - image: localhost:32000/web-auvmp-frontend:23.12.21
+        name: web-auvmp-frontend
         imagePullPolicy: Always
         ports:
         - containerPort: 80
