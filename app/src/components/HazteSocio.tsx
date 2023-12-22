@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from "react"
 import type { FormEvent } from "react"
 //import { api } from '../utils/api'

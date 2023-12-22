@@ -1,6 +1,7 @@
 import Image from "next/image";
 import auvmpLogo from '../recursos/AUVMP_logo.png'
 import HazteSocio from '../components/HazteSocio'
+import Link from "next/link";
 /*
 import iconoPatinete from '../recursos/PATINETEWEB.png'
 import iconoPatin from '../recursos/PATIN.png'
@@ -38,7 +39,7 @@ export default function NavegacionPrincipal() {
                         <li><a>Item 3</a></li>
                     </ul>
                     </div>
-                    <Image className="m-4 h-12 w-56" src={auvmpLogo} alt="AUVMP" priority={true} />
+                    <Link href="/"><Image className="m-4 h-12 w-56" src={auvmpLogo} alt="AUVMP" priority={true} /></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
