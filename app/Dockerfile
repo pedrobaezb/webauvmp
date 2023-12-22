@@ -1,30 +1,20 @@
 FROM node:20.10.0-alpine3.18 as builder
 RUN corepack enable
-RUN corepack prepare yarn@4.0.2 --activate
-COPY . /app
-WORKDIR /app
-ENV NODE_ENV production
-RUN yarn
-RUN yarn run build
+RUN corepack prepare pnpm@8.13.0 --activate
+COPY . /build
+WORKDIR /build
+RUN pnpm install
+ENV NEXT_TELEMETRY_DISABLED 1
+RUN pnpm build
 
 FROM node:20.10.0-alpine3.18
+ENV NODE_ENV=production
+ENV NEXT_SHARP_PATH=/usr/local/lib/node_modules/sharp
+ENV PORT=8080
+RUN npm i -g sharp@0.33.1
 USER node
-#RUN corepack enable
-#RUN corepack prepare yarn@4.0.2 --activate
-#COPY --from=builder /app/package.json /app/yarn.lock /app/.pnp* /app/
-#COPY --from=builder /app/.yarn/cache /app/.yarn/cache
-#COPY --from=builder /app/.next /app/.next
-#COPY --from=builder /app/public /app/public
-#COPY --from=builder /app/next.config.js /app/
-
-
-COPY --from=builder /app/.next/standalone/ .next/standalone/
-COPY --from=builder /app/.next/static/ .next/standalone/.next/static/
-COPY --from=builder /app/public/ .next/standalone/public/ 
-#WORKDIR /app
-#ENV NODE_ENV production
-#RUN yarn
-EXPOSE 80
-#ENTRYPOINT [ "yarn", "run", "start" ]
-ENTRYPOINT ["node", ".next/standalone/server.js"]
-
+COPY --from=builder --chown=node:node /build/.next/standalone/ /app/.next/standalone/
+COPY --from=builder --chown=node:node /build/.next/static/ /app/.next/standalone/.next/static/
+COPY --from=builder --chown=node:node /build/public/ /app/.next/standalone/public/
+EXPOSE 8080
+ENTRYPOINT ["node", "app/.next/standalone/server.js"]

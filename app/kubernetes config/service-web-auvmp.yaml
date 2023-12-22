@@ -6,10 +6,13 @@ metadata:
     app: web-auvmp
   name: service-web-auvmp
   annotations:
-    version: 23.07.19
+    version: 23.12.22
 spec:
   type: ClusterIP
   selector:
     app: web-auvmp
   ports:
-  - port: 80
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+

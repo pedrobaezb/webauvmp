@@ -1,7 +1,7 @@
 {
-  "packageManager": "yarn@4.0.2",
+  "packageManager": "pnpm@8.13.0",
   "name": "web-auvmp",
-  "version": "23.19.07",
+  "version": "23.12.22",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -13,8 +13,8 @@
     "@fortawesome/fontawesome-svg-core": "6.5.1",
     "@fortawesome/free-brands-svg-icons": "6.5.1",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "@next/swc-linux-arm64-musl": "npm:14.0.4",
-    "@next/swc-linux-x64-musl": "npm:14.0.4",
+    "@next/swc-linux-arm64-musl": "14.0.4",
+    "@next/swc-linux-x64-musl": "14.0.4",
     "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
