@@ -13,7 +13,7 @@ export default function Index() {
           <NavegacionPrincipal />
           <div className="container mx-auto px-8">
             <div className="hero w-3/4 mx-auto" style={{backgroundImage: 'url('+auvmpIntroImagen.src+')'}}>
-              <div className="hero-overlay bg-opacity-60">
+              <div className="hero-overlay size-full bg-opacity-60">
                 <video autoPlay loop muted>
                   <source src="/AUVMP_intro.mp4" type="video/mp4" />
                 </video>
