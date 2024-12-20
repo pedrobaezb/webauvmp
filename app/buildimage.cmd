@@ -1,2 +1,3 @@
- docker build --platform linux/arm64 -t 192.168.1.10:32000/web-auvmp-frontend:23.12.22 .
- docker push 192.168.1.10:32000/web-auvmp-frontend:23.12.22
+ docker build --platform linux/arm64 -t web-auvmp-frontend:24.12.20 -t latest .
+ rem docker save web-auvmp-frontend:24.12.20 | plink -load miniservidor1 "sudo k3s ctr -n k8s.io image import --local -"
+ rem pscp -load miniservidor1 .\*.yaml miniservidor1:./auvmp/

@@ -1,13 +1,14 @@
-FROM node:20.10.0-alpine3.18 as builder
-RUN corepack enable
-RUN corepack prepare pnpm@8.13.0 --activate
+FROM node:22.12.0-alpine3.21 AS builder
+RUN corepack enable pnpm
+RUN corepack use pnpm@9.15.0
 COPY . /build
 WORKDIR /build
 RUN pnpm install
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_TELEMETRY_DISABLED=1
 RUN pnpm build
 
-FROM node:20.10.0-alpine3.18
+FROM node:22.12.0-alpine3.21
+RUN npm i -g cross-spawn@7.0.6
 ENV NODE_ENV=production
 ENV NEXT_SHARP_PATH=/usr/local/lib/node_modules/sharp
 ENV PORT=8080

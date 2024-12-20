@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import Image from "next/image"
 import  fotoGeneralMiembrosAuvmp from '@/recursos/foto_general_miembros_auvmp.jpg'
-import NavegacionPrincipal from "@/components/NavecacionPrincipal"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faInstagram, faTiktok, faTelegram } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,7 +8,6 @@ import auvmpIntroImagen from '@/../public/AUVMP_intro_imagen.jpg'
 export default function Index() {
     return(<>
         <header>
-          <NavegacionPrincipal />
           <div className="container mx-auto px-8">
             <div className="hero w-3/4 mx-auto" style={{backgroundImage: 'url('+auvmpIntroImagen.src+')'}}>
               <div className="hero-overlay size-full bg-opacity-60">
@@ -73,11 +70,5 @@ export default function Index() {
               </aside>
             </div>
           </div>
-          <footer className="footer footer-center p-4 bg-base-300 text-base-content">
-            <div>
-              <p>Copyright © 2023 Asociación de Usuarios de Vehículos de Movilidad Personal - AUVMP Todos los derechos reservados.</p>
-              <p><a className="link" href="mailto:info@auvmp.org">Email de Contacto</a> <Link className="link" href="/PoliticaDePrivacidad">Politica de privacidad</Link></p>
-            </div>
-          </footer>
     </>)
   }

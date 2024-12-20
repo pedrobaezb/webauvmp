@@ -6,13 +6,14 @@ metadata:
     app: web-auvmp
   name: service-web-auvmp
   annotations:
-    version: 23.12.22
+    version: 24.12.20
 spec:
   type: ClusterIP
+  ipFamilyPolicy: PreferDualStack
   selector:
     app: web-auvmp
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8080
+    port: 8080
+    nodePort: 32000
 
